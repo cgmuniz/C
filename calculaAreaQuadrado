@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+double areaRetangulo(double largura, double altura) {
+  double areaRetangulo = largura * altura;
+  return areaRetangulo;
+}
+
+double areaDoQuadrado(double lado) {
+  double areaDoQuadrado = areaRetangulo(lado, lado);
+  return areaDoQuadrado;
+}
+
+int main(void) {
+  double ladoQuadrado;
+  printf("Dê um valor para o lado de um quadrado:\n");
+  scanf("%lf", &ladoQuadrado);
+  double areaQuadrado = areaDoQuadrado(ladoQuadrado);
+  printf("A área é do quadrado é %lf", areaQuadrado);
+  return 0;
+}
